@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 interface TodoInputProps {
     todoValue: string;
     setTodoValue: (value: string) => void;
@@ -11,7 +9,7 @@ export default function TodoInput({ todoValue, setTodoValue, handleAddTodos }: T
         setTodoValue(e.target.value);
     };
 
-    const handleAdd = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleAdd = () => {
         handleAddTodos(todoValue);
         setTodoValue('');
     };

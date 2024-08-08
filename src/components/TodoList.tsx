@@ -1,4 +1,3 @@
-import React from 'react'
 import TodoCard from './TodoCard'
 
 export default function TodoList(props: { todos: string[], handleEditTodos: (todoIndex: number) => void,handleDeleteTodos: (todoIndex: number) => void }) {
